@@ -766,7 +766,6 @@ table{
 
 .memberinfo {
   grid-area: smallbottom2;
-  max-height:200px;
 }
 
 .memberpic img{
@@ -794,6 +793,7 @@ table{
   width: 100%;
   height: auto;
   text-align: center;
+  min-width: 100px;
 }
 
 
@@ -942,6 +942,15 @@ table{
   .hero{
       font-size: 1rem;
   }
+
+  .memberinfo p{
+    font-size: .8rem;
+  }
+
+  .memberpic img{
+    min-width: 150px;
+    min-height: 150px;
+
 }
 
 

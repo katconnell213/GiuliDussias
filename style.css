@@ -29,26 +29,13 @@ footer, header {
   overflow: hidden;
 }
 
-nav{
-  display: inline-flex;
-  justify-content: center;
-  height: 275px;
-  width: 100%;
-  padding:10px;
-  
-
-
-}
-
-/* Navbar container */
-
+/* NavBar Giuli Pages*/
 .navbar {
-  width: 1200px;
-  height: 275px;
+  width: 100%;
+  height: 70px;
   margin: auto;
   justify-content: space-evenly;
   display:flex;
-  background-image: url("./images/LabBanner.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
@@ -56,7 +43,6 @@ nav{
   align-content: flex-start;
 }
 
-/* Links inside the navbar */
 .navbar a {
   float: left;
   font-size: 1.5rem;
@@ -66,22 +52,21 @@ nav{
   text-align: center;
   text-decoration: none;
   border-radius: 15px;
-  height: 50px;
-  
+  height: 60px;
 }
 
 .dropbtn a {
   float: left;
   font-size: 1.5rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  background-color:white;
   border: 1px solid white;
   text-align: center;
   padding: 14px 16px;
-  margin: 2px;
+  margin: auto;
   border-radius: 15px;
   font-family: "Arapey", 'Times New Roman', serif;
-
+  width:100%;
 }
 
 /* The dropdown container */
@@ -89,17 +74,20 @@ nav{
   float: left;
   overflow: hidden;
   background-color: transparent;
+  min-width: 16.5%;
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
   background-color: transparent;
-  border:none
+  border:none;
+  width:100%;
 }
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown-content .dropbtn {
-  background-color: rgb(148, 144, 144);
+color: royalblue;
+font-weight: bold;
 }
 
 /* Dropdown content (hidden by default) */
@@ -108,25 +96,27 @@ nav{
   position: absolute;
   background-color: transparent;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 0;
+  z-index: 1;
   border-radius: 15px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: white;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: center;
-  font-size: 1rem;
-  background-color: transparent;
+  font-size: 1.3rem;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  min-width: 220px;
+  height: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
 }
-
-
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
@@ -145,7 +135,7 @@ nav{
 
 .flextable{
   display: flex;
-  justify-content:space-evenly;
+  justify-content:space-around;
   flex-shrink: 1;
   flex-wrap: wrap;
   max-height: 180px;
@@ -347,7 +337,6 @@ table{
   color: rgba(255, 255, 255, 0);
   margin: auto;
   display:inline-flex;
-
 }
 
 .flip-box-back {
@@ -380,6 +369,7 @@ table{
   font-size: 1.2rem;
   margin: auto;
   display:inline-flex;
+  text-align: center;
 }
 
 
@@ -423,6 +413,20 @@ table{
   justify-content:space-around;
   width:100%;
   margin:auto;
+  background-size:cover;
+  z-index: 0;
+}
+
+.cardsresearch {
+  display:inline-flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  width:100%;
+  margin:auto;
+  background-image: url("./images/Triangle.png");
+  background-size:cover;
+  border-radius: 15px;
+  z-index: 0;
 }
 
 .row {
@@ -430,9 +434,9 @@ table{
   flex-direction:row;
   justify-content:space-around;
   align-items: center;
-  margin:15px;
+  margin:0px;
   width:90%;
-  height:auto
+  height:auto;
 }
 
 .flexitem{
@@ -453,19 +457,6 @@ table{
 
 
 /*Facilities  Page*/
-
-#facilities{
-  background-image: url(./images/Lab_1.jpg);
-  background-size: cover;
-}
-
-
-.location {
-  display: inline;
-}
-
-
-
 .webelement{
   max-width: 400px;
 }
@@ -477,12 +468,30 @@ table{
  font-size: 2rem;
 }
 
-
-
 .webpic{
   border-radius: 50%;
-  width: 16.5rem;
-  height: 16.5rem;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: auto;
+  display:inline-flex;
+  border: 10px solid transparent;
+  opacity: .5;
+  background-color: white;
+}
+.webpiccontainer{
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: auto;
+  display:inline-flex;
+  background-color: white;
+  border-radius: 15px;
+
+}
+
+.webpicsquare{
+  border-radius: 30px;
+  width: 12.5rem;
+  height: 12.5rem;
   margin: auto;
   display:inline-flex;
   border: 10px solid transparent;
@@ -491,23 +500,18 @@ table{
 
 .webelement .hero{
   position: relative;
-  top:40%;
+  top:35%;
   left:-50%;
   color:black;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: auto;
   display:inline-flex;
   text-align: center;
 }
 
 
-.webpiccontainer{
-  width: 16.5rem;
-  height: 16.5rem;
-  margin: auto;
-  display:inline-flex;
-}
+
 
 .webelement .webpic:hover {
   border: 10px solid blue;
@@ -519,10 +523,12 @@ table{
 }
 
 .webelement .facility-container {
-  position:absolute;
+  position:fixed;
   z-index: 10;
-  bottom:-25%;
-  left: 30%;
+  top:50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -300px;
   visibility: hidden;
   box-sizing: border-box;
   max-width: 600px;
@@ -568,7 +574,6 @@ table{
 .facility-container-img-inline{
   display:inline-flex !important;
   border-radius: 15px;
-
   width: 45% !important;
   padding: 5px !important;
   margin-top:20px;
@@ -582,7 +587,6 @@ table{
   line-height: 1.5rem;
   font-size: 1.2rem;
   margin: auto;
-
 }
 
 .definable .word:hover {
@@ -603,7 +607,6 @@ table{
   font-size: 1.5rem;
   border-radius: 15px;
   transition:all 1s ease-out 250ms;
-
 }
 
 .definable:hover .definition-container {
@@ -631,6 +634,193 @@ table{
   font-size: 1rem;
 }
 
+
+
+
+.containercollage {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  display: grid;
+  grid-template-areas: "largetop largetop largetop smalltop1" 
+                       "largetop largetop largetop smalltop2" 
+                       "smallbottom1 smallbottom2 smallbottom3 smallbottom4";
+}
+
+.photo-1 {
+  grid-area: largetop;
+}
+
+.photo-2 {
+  grid-area: smallbottom1;
+}
+
+.photo-3 {
+  grid-area: smallbottom2;
+}
+
+.photo-4 {
+  grid-area: smalltop1;
+}
+
+.photo-5 {
+  grid-area: smalltop2;
+}
+
+.photo-6 {
+  grid-area: smallbottom3;
+}
+.photo-7 {
+  grid-area: smallbottom4;
+}
+
+.photo {
+  background-color: white;
+  padding: 15px;
+}
+
+.large {
+  width: 100%;
+  max-height: 400px;
+}
+
+.small {
+  width: 100%;
+  max-height: 200px;
+}
+.large img{
+  width: 100%;
+  max-height: 400px;
+  border-radius: 15px;
+}
+
+.small img{
+  width: 100%;
+  max-height: 150px;
+  border-radius: 15px;
+}
+
+
+
+.noflip-box {
+  background-image: radial-gradient(rgb(255, 255, 255), rgb(77, 76, 76), rgb(0, 0, 0));
+  color: rgba(255, 255, 255, 0);
+  margin: auto;
+  display:inline-flex;
+  border-radius: 50%;
+}
+
+
+.containermember1 {
+  width: 100%;
+  min-height:500px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "largetop largetop  smalltop1" 
+                        "largetop largetop  smalltop1" 
+                       "largetop  largetop smallbottom2"
+                       "largetop  largetop smallbottom2" ;
+}
+.containermember2 {
+  width: 100%;
+  min-height:300px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "smalltop1 largetop largetop" 
+                        "smalltop1 largetop largetop" 
+                       "smallbottom2 largetop largetop" 
+                       "smallbottom2 largetop largetop";
+}
+
+.containermember3 {
+  width: 100%;
+  min-height:400px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  display: grid;
+  grid-template-areas: "smalltop1 largetop " 
+                       "smallbottom2 smallbottom2";
+}
+
+.Pic-1 {
+  grid-area: largetop;
+  margin: auto;
+}
+
+.contactinfo {
+  grid-area: smalltop1;
+}
+
+.contactinfo h3, h4{
+  text-align: center;
+  padding: 0px;
+}
+
+.memberinfo {
+  grid-area: smallbottom2;
+  max-height:200px;
+}
+
+.memberpic img{
+  min-width: 250px;
+  min-height: 250px;
+  border-radius: 15px;
+  padding: 5px;
+  height: auto;
+}
+
+.memberpic_ug img{
+  width: 100%;
+  height: auto;
+  min-width: 180px;
+  max-width:200px;
+  min-height: 180px;
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow: 0px 8px 10px 0px #b1aeae;
+  align-items: center;
+
+}
+
+.info {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width:1200px){
+
+  .navbar a {
+    font-size: 1.2rem;
+  }
+
+  .dropbtn a {
+    font-size: 1.2rem;
+
+  }
+
+  .dropdown-content a {
+    font-size: 1rem;
+    min-width: 150px;
+  }
+
+  .memberpic_ug img{
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  
+}
 
 
 
@@ -674,7 +864,9 @@ table{
   .flexitemleft{
     line-height: 1rem;
     font-size: .75rem;
+    background-color: royalblue;
   }
+
   
   .flexitemcenterfooter img{
     src: "./images/eye.png";
@@ -704,11 +896,9 @@ table{
   }
 
   .webelement .facility-container {
-    z-index: 10;
-    bottom:-25%;
-    left: 30%;
     max-width: 400px;
-    max-height: 400px;
+    margin-top: -200px;
+    margin-left:-200px;
   }
 
   .facility-container h4 {
@@ -727,7 +917,34 @@ table{
     font-size: .75rem !important; 
   }
 
+  .definable .definition-container {
+    width: 40%;
+    padding: 0rem 0rem 0rem 0rem;
+    font-size: 1rem;
+  }
+
+  .definition-container h4 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  
+  .definition-container .information {
+    padding:1px;
+  }
+  
+  .definition-container .definitions {
+    font-size: 1rem;
+  }
+
+  .definable .word {
+    font-size: .75rem;
+  }
+
+  .hero{
+      font-size: 1rem;
+  }
 }
+
 
 @media only screen and (max-width:700px){
 
@@ -764,9 +981,6 @@ table{
     font-size: .5rem;
   }
   
-  .hero{
-    font-size: .75rem;
-  }
 
   .webpic{
     width: 10.5rem;
@@ -786,11 +1000,24 @@ table{
   }
 
   .webelement .facility-container {
-    z-index: 10;
-    bottom:-20%;
-    left: 10%; 
     max-width: 400px;
     max-height: 400px;
   }
 
+  .navbar a {
+    font-size: .8rem;
+  }
+
+  .dropbtn a {
+    font-size: .8rem;
+  }
+
+  .dropdown-content a {
+    font-size: .8rem;
+  }
+
+
+  .hero{
+    font-size: .75rem;
+  }
 }

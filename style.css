@@ -317,7 +317,6 @@ table{
   border-radius: 50%;
   margin: auto;
   display:inline-flex;
-
 }
 
 .flip-box-front, .flip-box-back {
@@ -823,7 +822,14 @@ table{
   
 }
 
-
+@media (hover: hover) and (pointer: fine) {
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    border-radius: 50%;
+    margin: auto;
+    display:inline-flex;
+  }
+}
 
 
 

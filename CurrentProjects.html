@@ -74,47 +74,7 @@
   
 <article>
 
-  <br>
-
-  <div class="container">
-      <div class="spacer">
-        <div class="cards">
-          <div class="row">
-            <div class = "flexitem">
-              <a href="./LabMembers_ManagerPostDoc.html">
-                <div class = "flip-box">
-                <div class="noflip-box">
-                  <img class = "navpic" src="./images/Lab/Cap_setup.JPG" alt = "graduate students presenting work">
-                  <div class = "hero">Lab Manager and Post Docs</div>
-                </div>
-              </div>
-              </a>
-            </div>    
-            <div class = "flexitem">
-              <a href="./LabMembers_Grads.html">
-                <div class = "flip-box">
-                <div class="noflip-box">
-                  <img class = "navpic" src="./images/People/2017PSUxLing_GradStudents5.png" alt = "graduate students presenting work">
-                  <div class = "hero">Graduate Students</div>
-                </div>
-              </div>
-              </a>
-            </div>    
-            <div class = "flexitem">
-              <a href="./LabMembers_Undergrads.html">
-                <div class = "flip-box">
-                  <div class="noflip-box">
-                    <img class = "navpic" src="./images/People/PIRE_2019_Presentation4_sq.JPG" alt = "graduate students presenting work">
-                    <div class = "hero">Undergraduate Students</div>
-                  </div>
-                </div>
-              </a>
-            </div>  
-          </div>  
-        </div>
-      </div>
-  </div>
-
+<h1>Coming Soon!</h1>
 
 </article>
 <br>
@@ -148,5 +108,21 @@
 
 </body>
 
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+  }
+  </script>
 
 </html>

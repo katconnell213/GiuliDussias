@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" type="text/css" rel="stylesheet">
+
+<head>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <title>The Dussias BrainTracking Lab</title>
+  <meta content="width=device-width, initial-scale=1">
+</head>
+
+
+<header>
+
+  <img class = "headerimg" alt = "a picture of Giuli Dussias" src="./images/Slideshow/header.jpg"/>
+
+  <hr/>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="./AboutMe.html">About Me</a>
+      </button>
+      <div class="dropdown-content">
+      </div> 
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="./MyResearch.html">My Research</a>
+      </button>
+      <div class="dropdown-content">
+        <a href="./Publications.html">Publications</a>
+        <a href="./Grants.html">Grants</a>
+      </div> 
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="./Diversity.html">Diversity & Inclusion</a>
+      </button>
+      <div class="dropdown-content">
+      </div> 
+    </div>
+    
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="./MyTeaching.html">My Teaching</a>
+      </button>
+    </div>
+    
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="./MyLab.html">My Lab</a>
+      </button>
+      <div class="dropdown-content">
+        <a href="./Facilities.html">Facilities</a>
+        <a href="./CurrentProjects.html">Current Projects</a>
+        <a href="./LabMembers.html">Lab Members</a>
+
+
+      </div> 
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="./PIRE.html">PIRE</a>
+      </button>
+      <div class="dropdown-content">
+      </div> 
+    </div>
+  </div>
+
+<hr/>
+</header>
+
+
+<body>
+  
+<article>
+<h1>Teaching</h1>
+
+<div class="containercollapsible">
+  
+  <button type="button" class="collapsible" >Undergraduate </button>
+    <div class="content">
+      <p>I am a Professor of Spanish, Linguistics and Psychology in the Department of Spanish, Italian and Portuguese, with affiliate appointments in the Department of Psychology and in the Program in Linguistics. Since 2012, I have been the head of the Department of Spanish, Italian and Portuguese, a department that serves more than 5,000 students per year—with 17 tenured and tenure-track faculty, approximately 50 full-time teaching faculty, and 30 graduate students. I also directly supervise three staff members. My goal has been to create a culture of cross-disciplinary scholarship, and to assert the right to work and learn without fear of persecution based on race, gender identity and expression, language, culture, religion, and all other rights put forth in the Universal Declaration of Human Rights. 
+      </p>
+    </div>
+
+
+  <button type="button" class="collapsible">Graduate </button>
+    <div class="content">
+      <button type="button" class="collapsible">Graduate 1 </button>
+      <div class="content">
+        <p>I completed my doctoral studies in the interdisciplinary program in Second Language Acquisition and Teaching at the University of Arizona, with a specialization in syntactic analysis and a minor concentration in second language processing. I then held a faculty position at the University of Illinois Urbana-Champaign (UIUC) for four years (1996-2000), where I was a primary collaborator in pioneering a computer-enhanced hybrid language instruction model consisting of two hours of classroom instruction and two hours of computer-assisted asynchronous instruction. The model—which we devised to respond to a university-wide 3-semester language requirement in the context of challenging budgetary and space constraints— is now widely used in institutions across the US. Prior to assuming my current position at Penn State, I was a Visiting Assistant Professor at the University of Mississippi (2000-2001), where I was hired to implement the model for language instruction that we developed at Illinois.
+        </p>
+      </div>
+      <button type="button" class="collapsible">Graduate 2 </button>
+      <div class="content">
+        <p>I completed my doctoral studies in the interdisciplinary program in Second Language Acquisition and Teaching at the University of Arizona, with a specialization in syntactic analysis and a minor concentration in second language processing. I then held a faculty position at the University of Illinois Urbana-Champaign (UIUC) for four years (1996-2000), where I was a primary collaborator in pioneering a computer-enhanced hybrid language instruction model consisting of two hours of classroom instruction and two hours of computer-assisted asynchronous instruction. The model—which we devised to respond to a university-wide 3-semester language requirement in the context of challenging budgetary and space constraints— is now widely used in institutions across the US. Prior to assuming my current position at Penn State, I was a Visiting Assistant Professor at the University of Mississippi (2000-2001), where I was hired to implement the model for language instruction that we developed at Illinois.
+        </p>
+      </div>
+    </div>
+
+
+</div>
+
+
+</article>
+<br>
+
+<footer>
+  <hr/>
+  <div class = "main">
+    <div class="flextable" style = "width: 20%;">
+      <div class = "flexitemcenterfooter">
+        <a href = "./MyLab.html" target="_blank"><img src="./images/Web_Logo-Black.jpg" class = "logo" alt="Penn State lion logo" ></a>
+      </div>
+    </div>
+    <div class = "flextable"style = "width: 80%;">
+      <div class = "flexitemleft">
+        <p>Dr. Paola Giuli Dussias<br>
+        Department of Spanish, Italian, & Portuguese<br>
+        439 Burrowes Building<br>
+        University Park, Pa 16802</p>
+      </div>
+      <div class = "flexitemleft" id = "contact">
+        <p>Phone:&nbsp;(814) 865-4252  <br>
+        Fax: &nbsp;  &nbsp; (814) 863-7944 <br>
+        Email: &nbsp;pdussias at psu dot edu  </p>
+      </div>
+    </div>
+  </div>
+  <hr/>
+</footer>
+
+<br>
+
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+</body>
+
+
+
+</html>

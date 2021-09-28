@@ -715,7 +715,7 @@ table{
 
 
 .noflip-box {
-  background-image: radial-gradient(rgb(101, 235, 60), rgb(77, 76, 76), rgb(0, 0, 0));
+  background-image: radial-gradient(rgb(255, 255, 255), rgb(77, 76, 76), rgb(0, 0, 0));
   color: rgba(255, 255, 255, 0);
   margin: auto;
   display:inline-flex;

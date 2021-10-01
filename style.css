@@ -407,6 +407,8 @@ table{
   margin: auto;
   width:100%;
   min-height:800px;
+  justify-content: center;
+  justify-items: center;
 }
 
 .spacer {
@@ -909,8 +911,13 @@ table{
   align-items: center;
   width:100%;
 }
-
-
+.containercollapsibleteaching {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: left;
+  width:100%;
+}
 
 .collapsible {
   color: black;
@@ -936,7 +943,7 @@ table{
   float: right;
 }
 
-.active:after {
+.active, .collapsible:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
@@ -947,7 +954,7 @@ table{
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
+.collapsecontent {
   padding: 0 18px;
   margin: 10px 0px  30px 0px;
   width: 90%;
@@ -956,29 +963,140 @@ table{
   transition: max-height 0.2s ease-out;
   background-color: rgb(191, 206, 252);
   border-radius: 15px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Arapey", 'Times New Roman', serif;
   box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.2);
 }
 .contentteaching {
-  padding: 0 18px;
+  padding       : 0px 30px ; 
   margin: 10px 0px  30px 0px;
   width: 90%;
   max-height: 0;
   overflow: scroll;
   transition: max-height 0.2s ease-out;
-  background-color: transparent;
+  background-color: white;
   border-radius: 15px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Arapey", 'Times New Roman', serif;
+  border: 2px solid transparent;
+  align-items: left;
 
 }
 
-.content p{
+.collapsecontent p{
     text-indent:10px;
 }
 
 
+.contentbox {
+  padding: 0 18px;
+  margin: auto;
+  width: 90%;
+  overflow: hidden;
+  background-color: rgb(191, 206, 252);
+  border-radius: 15px;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  font-family: "Arapey", 'Times New Roman', serif;
+  box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.2);
+}
+.contentbox p{
+  text-indent:25px;
+}
+
+
+/* Style  download buttons */
+.downloadbtn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-family: "Arapey", 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.downloadbtn:hover {
+  background-color: RoyalBlue;
+}
+
+
+/* Style the list */
+ul.tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  justify-items: space-around;
+  align-content: center;
+  align-items: center;
+
+}
+
+/* Float the list items side by side */
+ul.tab li {
+  float: left;
+  background-color: transparent;
+}
+
+
+/* Style the links inside the list items */
+ul.tab li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  transition: 0s;
+  cursor: pointer;
+  padding : 0.25em 0.75em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  border: 2px solid black;
+  font-size: 1.55rem;
+  width: 90%;
+  min-width: 120px;
+  max-width: 200px;
+  line-height: 1.7rem;
+  font-family: "Arapey", 'Times New Roman', serif;
+  box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.2);
+  margin: 10px;
+  justify-content: right;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+  color: royalblue;
+  font-weight: bold;
+  border: 2px solid royalblue;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+  color: royalblue;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding       : 0px 30px ; 
+  background-color: rgb(191, 206, 252);
+  border-radius: 15px;
+  border: 2px solid transparent;
+  width: 100%;
+  min-height: 380px;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-family: "Arapey", 'Times New Roman', serif;
+  box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.2);
+}
+
+.tabcontent p{
+  text-indent:25px;
+}
 
 
 
@@ -1010,6 +1128,8 @@ table{
   }
   
 }
+
+
 
 
 

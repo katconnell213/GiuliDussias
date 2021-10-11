@@ -27,10 +27,7 @@
       <button class="dropbtn">
         <a href="./MyResearch.html">My Research</a>
       </button>
-      <div class="dropdown-content">
-        <a href="./Publications.html">Publications</a>
-        <a href="./Grants.html">Grants</a>
-      </div> 
+ 
     </div>
     <div class="dropdown">
       <button class="dropbtn">
@@ -116,9 +113,8 @@
       <!--Sub Tab 1 -->
       <button type="button" class="collapsible" style="text-align: left;">SPAN  083: Life with Two Languages</button>
       <div class="collapsecontent">
-        <h3>Course Description</h3>
-        <p>ADD HERE</p>   
-        <button class="downloadbtn">
+ 
+        <button class="downloadbtn"  style="margin: 10px;">
           <i class="fa fa-download"></i>
           <a href="./assets/syllabusspan083.pdf" target="_blank">Download</a>
           </button>
@@ -128,7 +124,7 @@
       <button type="button" class="collapsible"style="text-align: left;">SPAN 215: Introduction to Hispanic Linguistics </button>
       <div class="collapsecontent">
         <h3>Course Description</h3>
-        <p>ADD HERE</p>  
+        <p>Introduction to the fundamental components of linguistics using data from the Spanish language. SPAN 215 Introduction to Spanish Linguistics (3) Spanish 215 will introduce students to the fundamental components of linguistics (phonology, morphology, syntax, lexicon, and semantics) using data from the Spanish language. The course requires no previous knowledge of linguistics, but presupposes familiarity with Spanish at the 15 credit level or higher. The underlying purpose is to awaken students' interest in Spanish linguistics; to provide them with a foundation in the terminology and concepts necessary for studying higher level courses that are part of Spanish major and minor curricula; and to help them to decide which of the upper level classes they would be most interested in taking. Student performance in the course will be evaluated by (a) exams designed to verify their familiarity and understanding of linguistic terminology and concepts, their skill in doing phonetic transcription, and their ability to solve problems in phonology, morphology, syntax, and semantics, and (b) their preparedness and participation in classroom activities</p>  
         
         <button class="downloadbtn">
           <i class="fa fa-download"></i>
@@ -140,10 +136,7 @@
       <!--Sub Tab 3-->
       <button type="button" class="collapsible"style="text-align: left;">SPAN 415: Spanish Morphology and Syntax</button>
       <div class="collapsecontent">
-        <h3>Course Description</h3>
-        <p>ADD HERE</p>  
-        
-        <button class="downloadbtn">
+        <button class="downloadbtn"  style="margin: 10px;">
           <i class="fa fa-download"></i>
           <a href="./assets/syllabusspan415.pdf" target="_blank">Download</a>
           </button>
@@ -275,7 +268,7 @@ function openTab(evt, tabName) {
   
   for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
+      this.classList.toggle("active2");
       var content = this.nextElementSibling;
       if (content.style.maxHeight){
         content.style.maxHeight = null;

@@ -83,10 +83,16 @@ footer, header {
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown-content .dropbtn {
+.navbar .dropdown .dropdown-content a:hover {
 color: royalblue;
 font-weight: bold;
 }
+
+
+.navbar .dropdown .dropbtn  a:hover {
+  color: royalblue;
+  font-weight: bold;
+  }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -96,6 +102,12 @@ font-weight: bold;
   min-width: 160px;
   z-index: 1;
   border-radius: 15px;
+}
+
+
+.activepage a{
+  color: royalblue;
+  font-weight: bold;
 }
 
 /* Links inside the dropdown */

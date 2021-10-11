@@ -64,6 +64,7 @@ footer, header {
   font-family: "Arapey", 'Times New Roman', serif;
   width:100%;
   text-decoration: none;
+  
 }
 
 /* The dropdown container */
@@ -124,6 +125,7 @@ font-weight: bold;
   border-radius: 15px;
   min-width: 220px;
   height: 50px;
+
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
 }
@@ -767,7 +769,7 @@ table{
 
 .containermember3 {
   width: 100%;
-  min-height:400px;
+  min-height:500px;
   background-color: white;
   border: 2px solid black;
   border-radius: 15px;
@@ -1150,6 +1152,8 @@ ul.tab li .a:focus, .active {
 
   .dropbtn{
     min-width: 100px;
+
+
   }
   
 }

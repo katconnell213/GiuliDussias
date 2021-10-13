@@ -1209,7 +1209,6 @@ ul.tab li .a:focus, .active {
     border-radius: 50%;
     width: 13rem;
     height: 13rem;
-    opacity: .5;
     margin: auto;
     display:inline-flex;
   }
@@ -1385,7 +1384,6 @@ ul.tab li .a:focus, .active {
     border-radius: 50%;
     width: 8rem;
     height: 8rem;
-    opacity: .5;
     margin: auto;
     display:inline-flex;
   }

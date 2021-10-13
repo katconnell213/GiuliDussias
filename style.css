@@ -338,7 +338,10 @@ table{
 .flip-box:hover a{
   visibility: visible;
 }
-
+.contentbox{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 
 .flip-box-front, .flip-box-back {
   position: absolute;
@@ -788,6 +791,7 @@ table{
 .Pic-1 {
   grid-area: largetop;
   margin: auto;
+  visibility: visible;
 }
 
 .contactinfo {
@@ -801,14 +805,19 @@ table{
 
 .memberinfo {
   grid-area: smallbottom2;
+  width:100%;
+  max-width: 100%;
+  padding:10px;
 }
 
 .memberpic img{
   min-width: 250px;
   min-height: 250px;
+  max-width: 300px;
   border-radius: 15px;
   padding: 5px;
   height: auto;
+  visibility: visible;
 }
 
 .memberpic_ug img{
@@ -821,6 +830,7 @@ table{
   padding: 5px;
   box-shadow: 0px 8px 10px 0px #b1aeae;
   align-items: center;
+  visibility: visible;
 
 }
 
@@ -878,6 +888,7 @@ table{
 .photo {
   background-color: white;
   padding: 15px;
+  visibility: visible;
 }
 
 .largeG {
@@ -1311,14 +1322,6 @@ ul.tab li .a:focus, .active {
       font-size: 1rem;
   }
 
-  .memberinfo p{
-    font-size: .8rem;
-  }
-
-  .memberpic img{
-    min-width: 150px;
-    min-height: 150px;
-  }
 
   .dropbtn{
     min-width: 80px;
@@ -1341,7 +1344,39 @@ ul.tab li .a:focus, .active {
     min-width: 180px;
     line-height: 1.5rem;
   }
+  .contentbox{
+    font-size: .7rem;
+    line-height: 1rem;
+  }
 
+
+  .collapsecontent {
+    font-size: .8rem;
+  }
+  .collapsible{
+    font-size: 1rem;
+
+  }
+
+  h3{
+    font-size: 1rem;
+  }
+
+  .memberpic img{
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 150px;
+  }
+
+  .contactinfo p{
+    font-size: .75rem;
+  }
+  .memberinfo{
+    max-width: 80%;
+  }
+  .memberinfo p{
+    font-size: .7rem;
+  }
 }
 
 
@@ -1391,7 +1426,7 @@ ul.tab li .a:focus, .active {
   .webelement .hero{
     top:35%;
     left:-50%;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   
@@ -1413,6 +1448,27 @@ ul.tab li .a:focus, .active {
   }
 
   .hero{
-    font-size: .75rem;
+    padding:10px;
+    font-size: .70rem;
+  }
+
+    
+  .memberpic_ug img{
+    visibility: hidden;
+    box-shadow: none;
+    }
+  
+    .memberpic_ug .photo{
+        background-color: transparent;
+        padding: 0px;
+        visibility: hidden;
+      }
+    
+      .containermember3 {
+        background-color: transparent;
+  }
+  .Pic-1{
+    visibility: hidden;
+  
   }
 }

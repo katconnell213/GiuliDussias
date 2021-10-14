@@ -1555,3 +1555,34 @@ ul.tab li .a:focus, .active {
   }
 
 }
+
+@media only screen and (max-width:500px){
+
+  .container{
+    max-width:500px;
+  }
+
+
+  .researchinteresttabs{
+    max-width: 150px;
+    font-size: 1rem;
+    line-height: 1rem;
+  
+  }
+  .teachingblurb{
+    font-size: 1.3rem;
+  }
+
+  .teachingtabs{
+    max-width: 70px;
+    font-size: .70rem;
+    line-height: .7rem;
+    font-weight: bold;
+  }
+
+  .tablinks2{
+    max-width: 200px;
+    font-size: 1rem;
+  }
+
+}

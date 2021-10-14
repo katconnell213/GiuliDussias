@@ -1078,16 +1078,25 @@ ul.tab li a {
   padding : 0.25em 0.75em;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
-  font-size: 1.55rem;
   width: 90%;
-  min-width: 120px;
-  max-width: 200px;
-  line-height: 1.7rem;
+  min-width: 100px;
   font-family: "Arapey", 'Times New Roman', serif;
   box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.2);
   margin: 10px;
   justify-content: right;
   border: 2px solid black;
+}
+
+.researchinteresttabs{
+  max-width: 400px;
+  font-size: 1.55rem;
+  line-height: 1.7rem;
+
+}
+.teachingtabs{
+  max-width: 200px;
+  font-size: 1.55rem;
+  line-height: 1.7rem;
 }
 
 /* Change background color of links on hover */
@@ -1180,16 +1189,20 @@ ul.tab li .a:focus, .active {
   }
 
   .tabcontent2, .tabcontent3, .tabcontent p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.3;
     min-height: 200px;
   }
 
-  ul.tab li .tablinks {
+  .researchinteresttabs{
+    max-width: 400px;
     font-size: 1rem;
-    width: 90%;
-    min-width: 120px;
-    max-width: 200px;
+    line-height: 1.5rem;
+  
+  }
+  .teachingtabs{
+    max-width: 250px;
+    font-size: 1.3rem;
     line-height: 1.5rem;
   }
 
@@ -1375,7 +1388,41 @@ ul.tab li .a:focus, .active {
   .memberinfo p{
     font-size: .7rem;
   }
+
+  
+  .container{
+    max-width:800px;
+  }
+
+  .tabcontent2, .tabcontent3, .tabcontent p{
+    font-size: 1.3rem;
+    line-height: 1;
+    min-height: 200px;
+  }
+
+  .researchinteresttabs{
+    max-width: 400px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  
+  }
+  .teachingtabs{
+    max-width: 200px;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  ul.tab li .tablinks2 {
+    font-size: 1rem;
+    width: 90%;
+    min-width: 200px;
+    line-height: 1.5rem;
+  }
+
 }
+
+
+
 
 
 @media only screen and (max-width:700px){
@@ -1468,4 +1515,34 @@ ul.tab li .a:focus, .active {
     visibility: hidden;
   
   }
+
+  .container{
+    max-width:600px;
+  }
+
+  .tabcontent2, .tabcontent3, .tabcontent p{
+    font-size: 1rem;
+    line-height: 1;
+    min-height: 200px;
+  }
+
+  .researchinteresttabs{
+    max-width: 400px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  
+  }
+  .teachingtabs{
+    max-width: 150px;
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+
+  ul.tab li .tablinks2 {
+    font-size: 1rem;
+    width: 90%;
+    min-width: 200px;
+    line-height: 1.5rem;
+  }
+
 }

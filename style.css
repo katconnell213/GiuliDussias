@@ -1397,7 +1397,7 @@ ul.tab li .a:focus, .active {
   .tabcontent2, .tabcontent3, .tabcontent p{
     font-size: 1.3rem;
     line-height: 1;
-    min-height: 200px;
+    min-height: 150px;
   }
 
   .researchinteresttabs{
@@ -1521,21 +1521,26 @@ ul.tab li .a:focus, .active {
   }
 
   .tabcontent2, .tabcontent3, .tabcontent p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1;
     min-height: 150px;
   }
 
   .researchinteresttabs{
     max-width: 400px;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.2rem;
   
   }
+  .teachingblurb{
+    font-size: 1.2rem;
+  }
+  
   .teachingtabs{
     max-width: 150px;
     font-size: .75rem;
     line-height: 1rem;
+    font-weight: bold;
   }
 
   ul.tab li .tablinks2 {

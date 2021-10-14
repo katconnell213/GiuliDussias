@@ -1088,15 +1088,19 @@ ul.tab li a {
 }
 
 .researchinteresttabs{
-  max-width: 400px;
+  max-width: 500px;
   font-size: 1.55rem;
   line-height: 1.7rem;
-
 }
 .teachingtabs{
   max-width: 200px;
   font-size: 1.55rem;
   line-height: 1.7rem;
+}
+
+.tablinks2{
+  max-width: 500px;
+  font-size: 1.5rem;
 }
 
 /* Change background color of links on hover */
@@ -1145,7 +1149,6 @@ ul.tab li .a:focus, .active {
   font-family: "Arapey", 'Times New Roman', serif;
   box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.2);
 }
-
 .tabcontent2 p{
   text-indent:25px;
 }
@@ -1418,7 +1421,10 @@ ul.tab li .a:focus, .active {
     min-width: 200px;
     line-height: 1.5rem;
   }
-
+  .tablinks2{
+    max-width: 300px;
+    font-size: 1.2rem;
+  }
 }
 
 
@@ -1527,15 +1533,15 @@ ul.tab li .a:focus, .active {
   }
 
   .researchinteresttabs{
-    max-width: 400px;
-    font-size: 1.3rem;
+    max-width: 350px;
+    font-size: 1.5rem;
     line-height: 1.2rem;
   
   }
   .teachingblurb{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
-  
+
   .teachingtabs{
     max-width: 150px;
     font-size: .75rem;
@@ -1543,11 +1549,9 @@ ul.tab li .a:focus, .active {
     font-weight: bold;
   }
 
-  ul.tab li .tablinks2 {
-    font-size: 1rem;
-    width: 90%;
-    min-width: 200px;
-    line-height: 1.5rem;
+  .tablinks2{
+    max-width: 300px;
+    font-size: 1.2rem;
   }
 
 }

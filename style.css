@@ -1304,7 +1304,7 @@ ul.tab li .a:focus, .active {
   }
 
    h1{
-    font-size: 1rem !important; 
+    font-size: 1.3rem !important; 
   }
   h4{
     font-size: .75rem !important; 
@@ -1533,7 +1533,7 @@ ul.tab li .a:focus, .active {
   }
 
   .researchinteresttabs{
-    max-width: 350px;
+    max-width: 200px;
     font-size: 1.5rem;
     line-height: 1.2rem;
   
